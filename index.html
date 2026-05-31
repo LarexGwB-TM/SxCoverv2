@@ -3,46 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SX Dashboard | Üyelik Paneli</title>
+    <title>SX Dashboard</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="dashboard-container">
-        <!-- Üst Bar -->
-        <header class="dashboard-header">
-            <h1>SX Dashboard</h1>
-            <div class="user-profile">Hoş geldin, Kullanıcı</div>
+    <nav class="sidebar">
+        <h2>SX Panel</h2>
+        <ul>
+            <li>Dashboard</li>
+            <li>Funnel Oluştur</li>
+            <li>Üyelik Planları</li>
+            <li>Destek</li>
+        </ul>
+    </nav>
+
+    <main class="content">
+        <header>
+            <h1>Hoş Geldin, Larex!</h1>
         </header>
 
-        <!-- Ürünler (Pricing) Bölümü -->
-        <section class="products-section">
-            <h2 class="section-title">Üyelik Paketleri</h2>
+        <div class="stats-grid">
+            <div class="card"><h3>Total Members</h3><p>0</p></div>
+            <div class="card"><h3>Active Funnels</h3><p>0</p></div>
+        </div>
+
+        <section class="shop">
+            <h2>Üyelik ve Yetki Paketleri</h2>
             <div class="pricing-grid">
-                <div class="package">
-                    <h4>1 Haftalık</h4>
-                    <p>Temel erişim.</p>
-                    <button class="buy-btn">Satın Al</button>
-                </div>
-                <div class="package">
-                    <h4>1 Aylık</h4>
-                    <p>Standart erişim.</p>
-                    <button class="buy-btn">Satın Al</button>
-                </div>
-                <div class="package">
-                    <h4>1 Yıllık</h4>
-                    <p>Avantajlı seçim.</p>
-                    <button class="buy-btn">Satın Al</button>
-                </div>
-                
-                <!-- Dev Kampanya / Sınırsız -->
-                <div class="package featured">
+                <div class="item"><h4>1 Haftalık</h4><p>Deneme Erişimi</p><button>Satın Al</button></div>
+                <div class="item"><h4>1 Aylık</h4><p>Standart Erişim</p><button>Satın Al</button></div>
+                <div class="item"><h4>1 Yıllık</h4><p>Avantajlı</p><button>Satın Al</button></div>
+                <div class="item featured">
                     <span class="badge">DEV KAMPANYA</span>
-                    <h3>Sınırsız Üyelik</h3>
-                    <p>Tüm özellikler + <b>Discord Mod+ Yetkisi</b></p>
-                    <button class="buy-btn-featured">Hemen Al</button>
+                    <h3>Sınırsız</h3>
+                    <p>Sada Mod+ Yetkisi Dahil!</p>
+                    <button class="buy-btn">Hemen Satın Al</button>
                 </div>
             </div>
         </section>
-    </div>
+    </main>
 </body>
 </html>
